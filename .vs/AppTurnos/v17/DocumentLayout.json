@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\turnos\\data\\usuariosdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|solutionrelative:turnos\\data\\usuariosdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\front\\views\\targetusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\targetusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\front\\controllers\\targetuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\controllers\\targetuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\front\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\front\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\front\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\front\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\front\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\front\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\front\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\turnos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|solutionrelative:turnos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\turnos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|solutionrelative:turnos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\turnos\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|solutionrelative:turnos\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|c:\\users\\banco\\documents\\desarrolo\\appturnos\\turnos\\turnos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|solutionrelative:turnos\\turnos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,66 +55,131 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "usuariosData.cs",
-              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\Data\\usuariosData.cs",
-              "RelativeDocumentMoniker": "Turnos\\Data\\usuariosData.cs",
-              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\Data\\usuariosData.cs",
-              "RelativeToolTip": "Turnos\\Data\\usuariosData.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAYwCAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T20:58:09.583Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Views\\TargetUsers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Front\\Views\\TargetUsers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Views\\TargetUsers\\Index.cshtml",
+              "RelativeToolTip": "Front\\Views\\TargetUsers\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-17T19:14:34.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\appsettings.json",
-              "RelativeDocumentMoniker": "Turnos\\appsettings.json",
-              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\appsettings.json",
-              "RelativeToolTip": "Turnos\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-16T20:56:44.567Z",
+              "Title": "TargetUsersController.cs",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Controllers\\TargetUsersController.cs",
+              "RelativeDocumentMoniker": "Front\\Controllers\\TargetUsersController.cs",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Controllers\\TargetUsersController.cs",
+              "RelativeToolTip": "Front\\Controllers\\TargetUsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T19:13:00.318Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\Program.cs",
-              "RelativeDocumentMoniker": "Turnos\\Program.cs",
-              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\Program.cs",
-              "RelativeToolTip": "Turnos\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAkAAAA",
+              "DocumentIndex": 6,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Front\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Front\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T20:53:28.995Z",
+              "WhenOpened": "2024-05-17T15:53:16.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Turnos\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Turnos\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAgwDIAAAAJAAAA",
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Front\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Front\\Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T20:43:12.231Z",
+              "WhenOpened": "2024-05-17T15:53:03.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Front\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Front\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-17T15:50:05.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Front\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Front\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-17T15:48:57.605Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Turnos",
-              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\Turnos.csproj",
-              "RelativeDocumentMoniker": "Turnos\\Turnos.csproj",
-              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\Turnos.csproj",
-              "RelativeToolTip": "Turnos\\Turnos.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-16T20:08:24.034Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Front\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Front\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T15:48:06.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Program.cs",
+              "RelativeDocumentMoniker": "Front\\Program.cs",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Program.cs",
+              "RelativeToolTip": "Front\\Program.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAswBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T15:43:16.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Front\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Front\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADoAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-17T15:41:49.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\appsettings.json",
+              "RelativeDocumentMoniker": "Turnos\\appsettings.json",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Turnos\\appsettings.json",
+              "RelativeToolTip": "Turnos\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-17T15:15:00.788Z",
               "EditorCaption": ""
             }
           ]

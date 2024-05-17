@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+
+<h1 class="mt-4">Resumen</h1>
+
+<div class="row">
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-primary text-white mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col me-2">
+                        <div class="">Usuarios</div>
+                        <div class="fw-bold"><span id="spTotalClientes"></span></div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa-solid fa-user-group fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-danger text-white mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col me-2">
+                        <div class="">Roles</div>
+                        <div class="fw-bold"><span id="spPrestamosPendientes"></span></div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa-solid fa-hourglass-half fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-6">
+        <div class="card bg-success text-white mb-4">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col me-2">
+                        <div class="">Áreas</div>
+                        <div class="fw-bold"><span id="spPrestamosCancelados"></span></div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fa-solid fa-money-check-dollar fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="mdData" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Cliente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label class="col-form-label">Nro. Documento:</label>
+                        <input type="text" class="form-control data-in" id="txtNroDocumento" autocomplete="off" name="Nro_Documento">
+                    </div>
+                    <div class="col-sm-6">
+                        <label class="col-form-label">Nombre:</label>
+                        <input type="text" class="form-control data-in" id="txtNombre" autocomplete="off" name="Nombre">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label class="col-form-label">Apellido:</label>
+                        <input type="text" class="form-control data-in" id="txtApellido" autocomplete="off" name="Apellido">
+                    </div>
+                    <div class="col-sm-6">
+                        <label class="col-form-label">Correo:</label>
+                        <input type="email" class="form-control data-in" id="txtCorreo" autocomplete="off" name="Correo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label class="col-form-label">Telefono:</label>
+                        <input type="text" class="form-control data-in" id="txtTelefono" autocomplete="off" name="Telefono">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" id="btnGuardar">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="~/lib/datatables2/js/moment.min.js"></script>
+    <script src="~/lib/datatables2/js/datatables.js"></script>
+    <script src="~/views/cliente.js"></script>
+
+}

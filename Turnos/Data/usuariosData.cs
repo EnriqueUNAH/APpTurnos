@@ -119,7 +119,7 @@ namespace Turnos.Data
             {
 
                 SqlCommand cmd = new SqlCommand("ActualizarUsuario", con);
-                cmd.Parameters.AddWithValue("@UsuarioId", objeto.USUARIO);
+                cmd.Parameters.AddWithValue("@UsuarioId", objeto.ID_USUARIO);
                 cmd.Parameters.AddWithValue("@UsuarioNombre", objeto.USUARIO);
                 cmd.Parameters.AddWithValue("@Estado", objeto.ESTADO);
                 cmd.Parameters.AddWithValue("@RolId", objeto.ID_ROL);

@@ -65,3 +65,4 @@ C:\Users\BANCO\Documents\Desarrolo\AppTurnos\Turnos\obj\Debug\net8.0\refint\Turn
 C:\Users\BANCO\Documents\Desarrolo\AppTurnos\Turnos\obj\Debug\net8.0\Turnos.pdb
 C:\Users\BANCO\Documents\Desarrolo\AppTurnos\Turnos\obj\Debug\net8.0\Turnos.genruntimeconfig.cache
 C:\Users\BANCO\Documents\Desarrolo\AppTurnos\Turnos\obj\Debug\net8.0\ref\Turnos.dll
+C:\Users\BANCO\Documents\Desarrolo\AppTurnos\Turnos\obj\Debug\net8.0\Turnos.sourcelink.json
