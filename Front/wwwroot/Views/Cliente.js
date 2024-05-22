@@ -1,208 +1,105 @@
-﻿let tablaData;
-let idEditar = 0;
-const controlador = "Cliente";
-const modal = "mdData";
-const preguntaEliminar = "Desea Eliminar al Usuario";
-const confirmaEliminar = "El Usuario Fue Eliminado.";
-const confirmaRegistro = "Cliente registrado!";
+﻿$(document).ready(function () {
+    fetchUsers();
 
-document.addEventListener("DOMContentLoaded", function (event) {
-
-    tablaData = $('#tbData').DataTable({
-        responsive: true,
-        scrollX: true,
-        "ajax": {
-            "url": `/${controlador}/Lista`,
-            "type": "GET",
-            "datatype": "json"
-        },
-        "columns": [
-            { title: "", "data": "idCliente", visible: false },
-            { title: "ID_USUARIO", "data": "nroDocumento" },
-            { title: "USUARIO", "data": "nombre" },
-            { title: "ID_ROL", "data": "apellido" },
-            { title: "ID_AREA", "data": "correo" },
-            { title: "NÚMERO", "data": "telefono" },
-            { title: "EXTENCIION", "data": "fechaCreacion" },
-            { title: "fe", "data": "fechaCreacion" },
-            { title: "CELULAR", "data": "fechaCreacion" },
-            { title: "EXTENCION", "data": "fechaCreacion" },
-
-
-            {
-                title: "", "data": "idCliente", width: "100px", render: function (data, type, row) {
-                    return `<button class="btn btn-primary me-2 btn-editar"><i class="fa-solid fa-pen"></i></button>` +
-                        `<button class="btn btn-danger btn-eliminar"><i class="fa-solid fa-trash"></i></button>`
-                }
-            }
-        ],
-        "order": [0, 'desc'],
-        fixedColumns: {
-            start: 0,
-            end: 1
-        },
-        language: {
-            url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
-        },
+    // Aplicar filtros automáticamente cuando cambian los valores de los campos
+    $('#filterNombre, #filterArea, #filterZona').on('input change', function () {
+        applyFilters();
     });
-
 });
 
-
-$("#tbData tbody").on("click", ".btn-editar", function () {
-    var filaSeleccionada = $(this).closest('tr');
-    var data = tablaData.row(filaSeleccionada).data();
-
-    idEditar = data.idCliente;
-    $("#txtNroDocumento").val(data.nroDocumento);
-    $("#txtNombre").val(data.nombre);
-    $("#txtApellido").val(data.apellido);
-    $("#txtCorreo").val(data.correo);
-    $("#txtTelefono").val(data.telefono);
-    $(`#${modal}`).modal('show');
-})  
-
-
-$("#btnNuevo").on("click", function () {
-    idEditar = 0;
-    $("#txtNroDocumento").val("");
-    $("#txtNombre").val("");
-    $("#txtApellido").val("");
-    $("#txtCorreo").val("");
-    $("#txtTelefono").val("");
-    $(`#${modal}`).modal('show');
-})
-
-$("#tbData tbody").on("click", ".btn-eliminar", function () {
-    var filaSeleccionada = $(this).closest('tr');
-    var data = tablaData.row(filaSeleccionada).data();
-
-
-    Swal.fire({
-        text: `${preguntaEliminar} ${data.nombre} ${data.apellido}?`,
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Si, continuar",
-        cancelButtonText: "No, volver"
-    }).then((result) => {
-        if (result.isConfirmed) {
-
-            fetch(`/${controlador}/Eliminar?Id=${data.idCliente}`, {
-                method: "DELETE",
-                headers: { 'Content-Type': 'application/json;charset=utf-8' }
-            }).then(response => {
-                return response.ok ? response.json() : Promise.reject(response);
-            }).then(responseJson => {
-                if (responseJson.data == "") {
-                    Swal.fire({
-                        title: "Listo!",
-                        text: confirmaEliminar,
-                        icon: "success"
-                    });
-                    tablaData.ajax.reload();
-                } else {
-                    Swal.fire({
-                        title: "Error!",
-                        text: "No se pudo eliminar.",
-                        icon: "warning"
-                    });
-                }
-            }).catch((error) => {
-                Swal.fire({
-                    title: "Error!",
-                    text: "No se pudo eliminar.",
-                    icon: "warning"
-                });
-            })
+function fetchUsers() {
+    $.ajax({
+        url: 'https://localhost:7266/api/Usuario',
+        method: 'GET',
+        success: function (data) {
+            renderUserCards(data);
+            window.allUsers = data; // Guardar todos los usuarios para filtrar localmente
+        },
+        error: function (error) {
+            console.error('Error fetching users:', error);
         }
     });
-})
+}
 
+function applyFilters() {
+    const filteredUsers = window.allUsers.filter(user => {
+        const nombre = $('#filterNombre').val().toLowerCase();
+        const area = $('#filterArea').val();
+        const zona = $('#filterZona').val();
 
+        return (
+            (nombre === '' || user.usuario.toLowerCase().includes(nombre)) &&
+            (area === '' || user.idArea == area) &&
+            (zona === '' || user.idZona == zona)
+        );
+    });
 
-$("#btnGuardar").on("click", function () {
-    const inputs = $(".data-in").serializeArray();
-    const inputText = inputs.find((e) => e.value == "");
+    renderUserCards(filteredUsers);
+}
 
-    if (inputText != undefined) {
-        Swal.fire({
-            title: "Error!",
-            text: `Debe completar el campo: ${inputText.name}`,
-            icon: "warning"
-        });
-        return
-    }
+function renderUserCards(users) {
+    const userCardsContainer = $('#user-cards');
+    userCardsContainer.empty();
 
-    let objeto = {
-        idCliente: idEditar,
-        NroDocumento: $("#txtNroDocumento").val().trim(),
-        Nombre: $("#txtNombre").val().trim(),
-        Apellido: $("#txtApellido").val().trim(),
-        Correo: $("#txtCorreo").val().trim(),
-        Telefono: $("#txtTelefono").val().trim()
-    }
+    users.forEach(user => {
+        const rol = getRol(user.idRol);
+        const area = getArea(user.idArea);
+        const zona = getZona(user.idZona);
+        const estado = getEstado(user.estado);
 
-    if (idEditar != 0) {
+        const userCard = `
+            <div class="user-card">
+                <div class="card-body">
+                    <h5 class="card-title">Usuario: ${user.usuario || 'N/A'}</h5>
+                    <h5 class="card-title">Nombre: ${user.nombre || 'N/A'}</h5>
+                    <h5 class="card-title">Rol: ${rol}</h5>
+                    <h5 class="card-title">Área: ${area}</h5>
+                    <h5 class="card-title">Número: ${user.numero || 'N/A'}</h5>
+                    <h5 class="card-title">Extensión: ${user.extension || 'N/A'}</h5>
+                    <h5 class="card-title">Zona: ${zona}</h5>
+                    <h5 class="card-title">Celular: ${user.celular || 'N/A'}</h5>
+                    <h5 class="card-title">Estado: ${estado}</h5>
+                    <h5 class="card-title">Correo: ${user.correo || 'N/A'}</h5>
+                </div>
+            </div>
+        `;
+        userCardsContainer.append(userCard);
+    });
+}
 
-        fetch(`/${controlador}/Editar`, {
-            method: "PUT",
-            headers: { 'Content-Type': 'application/json;charset=utf-8' },
-            body: JSON.stringify(objeto)
-        }).then(response => {
-            return response.ok ? response.json() : Promise.reject(response);
-        }).then(responseJson => {
-            if (responseJson.data == "") {
-                idEditar = 0;
-                Swal.fire({
-                    text: "Se guardaron los cambios!",
-                    icon: "success"
-                });
-                $(`#${modal}`).modal('hide');
-                tablaData.ajax.reload();
-            } else {
-                Swal.fire({
-                    title: "Error!",
-                    text: responseJson.data,
-                    icon: "warning"
-                });
-            }
-        }).catch((error) => {
-            Swal.fire({
-                title: "Error!",
-                text: "No se pudo editar.",
-                icon: "warning"
-            });
-        })
-    } else {
-        fetch(`/${controlador}/Crear`, {
-            method: "POST",
-            headers: { 'Content-Type': 'application/json;charset=utf-8' },
-            body: JSON.stringify(objeto)
-        }).then(response => {
-            return response.ok ? response.json() : Promise.reject(response);
-        }).then(responseJson => {
-            if (responseJson.data == "") {
-                Swal.fire({
-                    text: confirmaRegistro,
-                    icon: "success"
-                });
-                $(`#${modal}`).modal('hide');
-                tablaData.ajax.reload();
-            } else {
-                Swal.fire({
-                    title: "Error!",
-                    text: responseJson.data,
-                    icon: "warning"
-                });
-            }
-        }).catch((error) => {
-            Swal.fire({
-                title: "Error!",
-                text: "No se pudo registrar.",
-                icon: "warning"
-            });
-        })
-    }
-});
+function getRol(id) {
+    const roles = {
+        1: 'Administrador',
+        2: 'Operador',
+        3: 'Jefe Técnico',
+        4: 'Usuario Común'
+    };
+    return roles[id] || 'N/A';
+}
+
+function getArea(id) {
+    const areas = {
+        1: 'SERVIDORES',
+        2: 'REDES Y COMUNICACIÓN',
+        3: 'DESARROLLO',
+        4: 'USUARIOS EXPERTOS',
+        5: 'SOPORTE TÉCNICO',
+        6: 'INFRAESTRUCTURA Y TALLER',
+        7: 'PROYECTOS',
+        8: 'JEFATURAS'
+    };
+    return areas[id] || 'N/A';
+}
+
+function getZona(id) {
+    const zonas = {
+        1: 'Centro Sur',
+        2: 'Norte',
+        3: 'Occidente'
+    };
+    return zonas[id] || 'N/A';
+}
+
+function getEstado(id) {
+    return id === 1 ? 'Activo' : 'Inactivo';
+}

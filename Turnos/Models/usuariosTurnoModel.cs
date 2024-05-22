@@ -1,6 +1,6 @@
 ﻿namespace Turnos.Models
 {
-    public class UsuariosModel
+    public class usuariosTurnoModel
     {
         public int IdUsuario { get; set; }
         public string Usuario { get; set; }

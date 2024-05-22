@@ -9,7 +9,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Register servicios
 builder.Services.AddSingleton<usuariosData>();
+builder.Services.AddScoped<UsuariosTurnosData>(); // Registro de UsuariosTurnosData
 
 builder.Services.AddCors(options =>
 {

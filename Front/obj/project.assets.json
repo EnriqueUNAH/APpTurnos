@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\BANCO\\.nuget\\packages\\": {}
+    "C:\\Users\\hnola\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Front.csproj",
+      "projectUniqueName": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Front.csproj",
       "projectName": "Front",
-      "projectPath": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\Front.csproj",
-      "packagesPath": "C:\\Users\\BANCO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BANCO\\Documents\\Desarrolo\\AppTurnos\\Front\\obj\\",
+      "projectPath": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Front.csproj",
+      "packagesPath": "C:\\Users\\hnola\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\BANCO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hnola\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
