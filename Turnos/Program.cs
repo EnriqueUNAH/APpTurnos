@@ -11,7 +11,10 @@ builder.Services.AddSwaggerGen();
 
 // Register servicios
 builder.Services.AddSingleton<usuariosData>();
-builder.Services.AddScoped<UsuariosTurnosData>(); // Registro de UsuariosTurnosData
+builder.Services.AddScoped<UsuariosTurnosData>();
+builder.Services.AddScoped<AreasData>();
+builder.Services.AddScoped<RolesData>();
+builder.Services.AddScoped<ZonaData>();
 
 builder.Services.AddCors(options =>
 {

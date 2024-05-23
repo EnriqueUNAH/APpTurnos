@@ -34,11 +34,11 @@ namespace Turnos.Data
                             IdUsuario = Convert.ToInt32(reader["IdUsuario"]),
                             Usuario = reader["Usuario"].ToString(),
                             Nombre = reader["Nombre"].ToString(),
-                            IDRol = Convert.ToInt32(reader["IDRol"]),
-                            IDArea = Convert.ToInt32(reader["IDArea"]),
+                            Rol = reader["Rol"].ToString(),
+                            NombreArea = reader["NombreArea"].ToString(),
                             Numero = reader["Numero"].ToString(),
                             Extension = reader["Extension"].ToString(),
-                            IdZona = Convert.ToInt32(reader["IdZona"]),
+                            NombreZona = reader["NombreZona"].ToString(),
                             Celular = reader["Celular"].ToString(),
                             Estado = Convert.ToInt32(reader["Estado"]),
                             Correo = reader["Correo"].ToString()
@@ -69,11 +69,11 @@ namespace Turnos.Data
                             IdUsuario = Convert.ToInt32(reader["IdUsuario"]),
                             Usuario = reader["Usuario"].ToString(),
                             Nombre = reader["Nombre"].ToString(),
-                            IDRol = Convert.ToInt32(reader["IDRol"]),
-                            IDArea = Convert.ToInt32(reader["IDArea"]),
+                            Rol = reader["Rol"].ToString(),
+                            NombreArea = reader["NombreArea"].ToString(),
                             Numero = reader["Numero"].ToString(),
                             Extension = reader["Extension"].ToString(),
-                            IdZona = Convert.ToInt32(reader["IdZona"]),
+                            NombreZona = reader["NombreZona"].ToString(),
                             Celular = reader["Celular"].ToString(),
                             Estado = Convert.ToInt32(reader["Estado"]),
                             Correo = reader["Correo"].ToString()
@@ -95,11 +95,11 @@ namespace Turnos.Data
                 cmd.Parameters.AddWithValue("@UsuarioNombre", objeto.Usuario);
                 cmd.Parameters.AddWithValue("@Nombre", objeto.Nombre);
                 cmd.Parameters.AddWithValue("@Estado", objeto.Estado);
-                cmd.Parameters.AddWithValue("@RolId", objeto.IDRol);
-                cmd.Parameters.AddWithValue("@AreaId", objeto.IDArea);
+                cmd.Parameters.AddWithValue("@RolId", objeto.Rol);
+                cmd.Parameters.AddWithValue("@AreaId", objeto.NombreArea);
                 cmd.Parameters.AddWithValue("@Numero", objeto.Numero);
                 cmd.Parameters.AddWithValue("@Extension", objeto.Extension);
-                cmd.Parameters.AddWithValue("@ZonaId", objeto.IdZona);
+                cmd.Parameters.AddWithValue("@ZonaId", objeto.NombreZona);
                 cmd.Parameters.AddWithValue("@Celular", objeto.Celular);
                 cmd.Parameters.AddWithValue("@Correo", objeto.Correo);
 
@@ -129,11 +129,11 @@ namespace Turnos.Data
                 cmd.Parameters.AddWithValue("@UsuarioNombre", objeto.Usuario);
                 cmd.Parameters.AddWithValue("@Nombre", objeto.Nombre);
                 cmd.Parameters.AddWithValue("@Estado", objeto.Estado);
-                cmd.Parameters.AddWithValue("@RolId", objeto.IDRol);
-                cmd.Parameters.AddWithValue("@AreaId", objeto.IDArea);
+                cmd.Parameters.AddWithValue("@RolId", objeto.Rol);
+                cmd.Parameters.AddWithValue("@AreaId", objeto.NombreArea);
                 cmd.Parameters.AddWithValue("@Numero", objeto.Numero);
                 cmd.Parameters.AddWithValue("@Extension", objeto.Extension);
-                cmd.Parameters.AddWithValue("@ZonaId", objeto.IdZona);
+                cmd.Parameters.AddWithValue("@ZonaId", objeto.NombreZona);
                 cmd.Parameters.AddWithValue("@Celular", objeto.Celular);
                 cmd.Parameters.AddWithValue("@Correo", objeto.Correo);
 
