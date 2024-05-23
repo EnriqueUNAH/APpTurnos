@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\wwwroot\\views\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\wwwroot\\views\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\turnos\\data\\usuariosturnosdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|solutionrelative:turnos\\data\\usuariosturnosdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Home.js",
-              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\Views\\Home.js",
-              "RelativeDocumentMoniker": "Front\\wwwroot\\Views\\Home.js",
-              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\Views\\Home.js",
-              "RelativeToolTip": "Front\\wwwroot\\Views\\Home.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-23T17:00:46.045Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Front\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Front\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-23T20:25:39.138Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Front\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Front\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGQAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T17:00:01.391Z",
+              "Title": "usuariosTurnosData.cs",
+              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Turnos\\Data\\usuariosTurnosData.cs",
+              "RelativeDocumentMoniker": "Turnos\\Data\\usuariosTurnosData.cs",
+              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Turnos\\Data\\usuariosTurnosData.cs",
+              "RelativeToolTip": "Turnos\\Data\\usuariosTurnosData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T20:05:41.18Z",
               "EditorCaption": ""
             }
           ]

@@ -1,5 +1,74 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    Layout = null;
 }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, white, orange, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+            .login-container h2 {
+                margin-bottom: 1.5rem;
+                color: #000000; /* Color negro */
+            }
+
+        .form-control {
+            border-radius: 30px;
+            padding: 0.75rem 1.25rem;
+            border: 1px solid #ccc;
+        }
+
+        .btn-login {
+            background-color: #FFA500; /* Color anaranjado */
+            color: #fff;
+            border-radius: 30px;
+            padding: 0.75rem;
+            width: 100%;
+            border: none;
+        }
+
+            .btn-login:hover {
+                background-color: #FF8C00; /* Anaranjado oscuro al pasar el ratón */
+            }
+
+        .form-group input {
+            color: #000000; /* Color negro para el texto de los inputs */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container text-center">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Usuario">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Contraseña">
+            </div>
+            <button type="submit" class="btn btn-login">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>
