@@ -14,7 +14,7 @@ function loadAreas() {
             areaSelect.empty();
             areaSelect.append($('<option>', {
                 value: '',
-                text: 'Filtrar por área'
+                text: 'Todas las  Áreas'
             }));
             data.forEach(area => {
                 areaSelect.append($('<option>', {
@@ -38,7 +38,7 @@ function loadZones() {
             zoneSelect.empty();
             zoneSelect.append($('<option>', {
                 value: '',
-                text: 'Filtrar por zona'
+                text: 'Todas las Zonas'
             }));
             data.forEach(zone => {
                 zoneSelect.append($('<option>', {
