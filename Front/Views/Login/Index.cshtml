@@ -49,11 +49,11 @@
         }
 
             .btn-login:hover {
-                background-color: #FF8C00; /* Anaranjado oscuro al pasar el ratón */
+                background-color: #FF8C00;
             }
 
         .form-group input {
-            color: #000000; /* Color negro para el texto de los inputs */
+            color: #000000;
         }
 
         .error {
@@ -65,12 +65,12 @@
 <body>
     <div class="login-container text-center">
         <h2>Login</h2>
-        <form id="loginForm">
+        <form id="loginForm" method="post" action="/Login/Authenticate">
             <div class="form-group">
-                <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
+                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario" required>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
             </div>
             <button type="submit" class="btn btn-login">Entrar</button>
             <div id="error-message" class="error"></div>
@@ -78,46 +78,7 @@
     </div>
 
     <script>
-        document.getElementById('loginForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const usuario = document.getElementById('usuario').value;
-            const password = document.getElementById('password').value;
-            const errorMessage = document.getElementById('error-message');
-
-            // Llamada a la API de usuarios para verificar si el usuario existe
-            fetch(`https://localhost:7266/api/Usuario?usuario=${usuario}`)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Error en la red');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    const user = data.find(user => user.usuario === usuario);
-                    if (user) {
-                        if (user.estado === 1) {
-                            // Usuario activo
-                            if (user.password != password) { //                 Validar con la api luego----------------------
-                                // Entrada al index de la pagina
-                                window.location.href = '/home/'; 
-                            } else {
-                                errorMessage.textContent = 'Contraseña incorrecta';
-                            }
-                        } else {
-                            // Usuario inactivo
-                            errorMessage.textContent = 'Cuenta inactiva. Comuníquese con los administradores.';
-                        }
-                    } else {
-                        // Usuario no encontrado
-                        errorMessage.textContent = 'Usuario no encontrado';
-                    }
-                })
-                .catch(error => {
-                    console.error('Error al verificar el usuario:', error);
-                    errorMessage.textContent = 'Error al verificar el usuario';
-                });
-        });
+        // Puedes eliminar el script JavaScript para el manejo del submit porque lo harás en el controlador
     </script>
 </body>
 </html>

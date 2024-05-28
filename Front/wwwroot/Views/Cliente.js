@@ -55,7 +55,8 @@ function renderUserCards(users) {
         const estado = getEstado(user.estado);
 
         const userCard = `
-            <div class="user-card">
+        <div class="col-md-4 mb-4">
+            <div class="card user-card">
                 <div class="card-body">
                     <h5 class="card-title">Usuario: ${user.usuario || 'N/A'}</h5>
                     <h5 class="card-title">Nombre: ${user.nombre || 'N/A'}</h5>
@@ -69,6 +70,8 @@ function renderUserCards(users) {
                     <h5 class="card-title">Correo: ${user.correo || 'N/A'}</h5>
                 </div>
             </div>
+        <div>
+
         `;
         userCardsContainer.append(userCard);
     });

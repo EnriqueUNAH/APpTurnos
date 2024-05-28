@@ -60,3 +60,6 @@ C:\Users\hnola\Documents\PRACTICA BANCO DE OCCIDENTE\0\APpTurnos\Front\obj\Debug
 C:\Users\hnola\Documents\PRACTICA BANCO DE OCCIDENTE\0\APpTurnos\Front\obj\Debug\net8.0\Front.pdb
 C:\Users\hnola\Documents\PRACTICA BANCO DE OCCIDENTE\0\APpTurnos\Front\obj\Debug\net8.0\Front.genruntimeconfig.cache
 C:\Users\hnola\Documents\PRACTICA BANCO DE OCCIDENTE\0\APpTurnos\Front\obj\Debug\net8.0\ref\Front.dll
+C:\Users\hnola\Documents\PRACTICA BANCO DE OCCIDENTE\0\APpTurnos\Front\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\hnola\Documents\PRACTICA BANCO DE OCCIDENTE\0\APpTurnos\Front\obj\Debug\net8.0\Front.csproj.AssemblyReference.cache
+C:\Users\hnola\Documents\PRACTICA BANCO DE OCCIDENTE\0\APpTurnos\Front\obj\Debug\net8.0\Front.csproj.Up2Date
