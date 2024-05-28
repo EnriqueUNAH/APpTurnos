@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\",
+  "WorkspaceRootPath": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\0\\appturnos\\front\\wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\0\\appturnos\\front\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\0\\appturnos\\front\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\0\\appturnos\\front\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\0\\appturnos\\front\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Program.cs",
-              "RelativeDocumentMoniker": "Front\\Program.cs",
-              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Program.cs",
-              "RelativeToolTip": "Front\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T19:44:45.502Z",
+              "DocumentIndex": 0,
+              "Title": "layout.js",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\wwwroot\\js\\layout.js",
+              "RelativeDocumentMoniker": "Front\\wwwroot\\js\\layout.js",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\wwwroot\\js\\layout.js",
+              "RelativeToolTip": "Front\\wwwroot\\js\\layout.js",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAgwAoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-28T16:56:04.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Login\\Index.cshtml",
-              "RelativeDocumentMoniker": "Front\\Views\\Login\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Login\\Index.cshtml",
-              "RelativeToolTip": "Front\\Views\\Login\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAB4AAAA",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Front\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Front\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAwwIAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:18:17.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Program.cs",
+              "RelativeDocumentMoniker": "Front\\Program.cs",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Program.cs",
+              "RelativeToolTip": "Front\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAcwB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T16:18:02.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Front\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Front\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAACkAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-27T19:32:10.902Z",
+              "WhenOpened": "2024-05-28T15:48:33.475Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Controllers\\LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Front\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Front\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAYwAgAAAAtAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAADgvywAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T17:55:26.602Z",
               "EditorCaption": ""

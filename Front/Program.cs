@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,10 +8,23 @@ builder.Services.AddControllersWithViews();
 // Add session services
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(30); // Duración de la sesión
-    options.Cookie.HttpOnly = true; // Hace que la cookie de sesión sea accesible solo en el lado del servidor
-    options.Cookie.IsEssential = true; // Hace que la cookie sea esencial para la aplicación
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Duration of the session
+    options.Cookie.HttpOnly = true; // Session cookie should be accessible only by server-side code
+    options.Cookie.IsEssential = true; // Mark the cookie as essential
 });
+
+// Add authentication services with cookies
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Login"; // Redirect to login page if unauthenticated
+        options.LogoutPath = "/Home/Salir"; // Redirect to logout action when signing out
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // Set cookie expiration
+        options.SlidingExpiration = true; // Renew the cookie each request if less than half the time remaining
+    });
+
+// Register IHttpClientFactory
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
@@ -17,7 +32,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -26,13 +40,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseSession(); // Use session middleware
+app.UseAuthentication(); // Use authentication middleware
 app.UseAuthorization();
-
-// Use session middleware
-app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Login}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Index}/{id?}"); //login
 
 app.Run();
