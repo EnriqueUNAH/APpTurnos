@@ -1,7 +1,6 @@
 /*stilos css de usuarios*/
 body {
     font-family: Arial, sans-serif;
-    color: white;
 }
 
 .user-cards {
@@ -9,6 +8,7 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     border-block-color: white;
+    color: white;
 }
 
 .user-card {
@@ -17,11 +17,13 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
     transition: transform 0.3s, box-shadow 0.3s; /* Agregar efecto de transición */
+    color: white;
 }
 
     .user-card:hover {
         transform: translateY(-10px); /* Efecto de elevación */
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Efecto de sombra */
+        color: white;
     }
 
 .header-section {
