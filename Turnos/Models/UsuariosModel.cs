@@ -13,5 +13,13 @@
         public string Celular { get; set; }
         public int Estado { get; set; }
         public string Correo { get; set; }
+
+
+        public int IDRol {  get; set; }
+        public int IDArea { get; set; }
+        public int IdZona { get; set; }
+
+
+
     }
 }

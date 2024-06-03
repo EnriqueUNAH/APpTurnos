@@ -15,11 +15,11 @@ namespace Front.Controllers
             ViewBag.Nombre = HttpContext.Session.GetString("Nombre");
             ViewBag.Correo = HttpContext.Session.GetString("Correo");
             ViewBag.IDUsuario = HttpContext.Session.GetString("IDUsuario");
-            ViewBag.IDRol = HttpContext.Session.GetString("IDRol");
-            ViewBag.IDArea = HttpContext.Session.GetString("IDArea");
+            ViewBag.Rol = HttpContext.Session.GetString("rol");
+            ViewBag.NombreArea = HttpContext.Session.GetString("NombreArea");
             ViewBag.Numero = HttpContext.Session.GetString("Numero");
             ViewBag.Extension = HttpContext.Session.GetString("Extension");
-            ViewBag.IdZona = HttpContext.Session.GetString("IdZona");
+            ViewBag.NombreZona = HttpContext.Session.GetString("nombreZona");
             ViewBag.Celular = HttpContext.Session.GetString("Celular");
             ViewBag.Estado = HttpContext.Session.GetString("Estado");
 
@@ -27,18 +27,18 @@ namespace Front.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateUser(string idUsuario, string usuario, string nombre, string idRol, string idArea, string numero, string extension, string idZona, string celular, string estado, string correo)
+        public async Task<IActionResult> UpdateUser(string idUsuario, string usuario, string nombre, string rol, string nombreArea, string numero, string extension, string nombreZona, string celular, int estado, string correo)
         {
             var updatedUser = new
             {
                 idUsuario,
                 usuario,
                 nombre,
-                idRol,
-                idArea,
+                rol,
+                nombreArea,
                 numero,
                 extension,
-                idZona,
+                nombreZona,
                 celular,
                 estado,
                 correo
@@ -48,7 +48,17 @@ namespace Front.Controllers
             {
                 var json = JsonConvert.SerializeObject(updatedUser);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
-                var response = await client.PutAsync($"https://localhost:7266/api/Usuario/{idUsuario}", content);
+
+                HttpResponseMessage response;
+                try
+                {
+                    response = await client.PutAsync($"https://localhost:7266/api/Usuario/{idUsuario}", content);
+                }
+                catch (HttpRequestException e)
+                {
+                    ViewBag.ErrorMessage = $"Error en la solicitud HTTP: {e.Message}";
+                    return View("Index");
+                }
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -57,16 +67,20 @@ namespace Front.Controllers
                     HttpContext.Session.SetString("Nombre", nombre);
                     HttpContext.Session.SetString("Correo", correo);
                     HttpContext.Session.SetString("IDUsuario", idUsuario);
+                    HttpContext.Session.SetString("rol", rol);
+                    HttpContext.Session.SetString("NombreArea", nombreArea);
                     HttpContext.Session.SetString("Numero", numero);
                     HttpContext.Session.SetString("Extension", extension);
+                    HttpContext.Session.SetString("nombreZona", nombreZona);
                     HttpContext.Session.SetString("Celular", celular);
-                    HttpContext.Session.SetString("Estado", estado);
+                    HttpContext.Session.SetString("Estado", estado.ToString());
 
                     return RedirectToAction("Index");
                 }
                 else
                 {
-                    ViewBag.ErrorMessage = "Error updating user";
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    ViewBag.ErrorMessage = $"Error updating user: {response.ReasonPhrase}. Detalle: {responseContent}";
                 }
             }
 

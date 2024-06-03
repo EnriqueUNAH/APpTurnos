@@ -28,13 +28,6 @@ builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();
-}
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -44,8 +37,18 @@ app.UseSession(); // Use session middleware
 app.UseAuthentication(); // Use authentication middleware
 app.UseAuthorization();
 
+app.Use(async (context, next) =>
+{
+    if (!context.User.Identity.IsAuthenticated && !context.Request.Path.StartsWithSegments("/Login"))
+    {
+        context.Response.Redirect("/Login");
+        return;
+    }
+    await next();
+});
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Login}/{action=Index}/{id?}"); //login
+    pattern: "{controller=Home}/{action=Index}/{id?}"); //home
 
 app.Run();

@@ -1,21 +1,34 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Cargar la información del perfil cuando se abre el modal
-    $('#profileModal').on('show.bs.modal', function (event) {
-        fetch('/Home/GetProfile')
+    const profileForm = document.getElementById('profileForm');
+    const profileIDUsuario = document.getElementById('profileIDUsuario');
+    const profileUsuario = document.getElementById('profileUsuario');
+    const profileNombre = document.getElementById('profileNombre');
+    const profileIDRol = document.getElementById('profileIDRol');
+    const profileIDArea = document.getElementById('profileIDArea');
+    const profileNumero = document.getElementById('profileNumero');
+    const profileExtension = document.getElementById('profileExtension');
+    const profileIdZona = document.getElementById('profileIdZona');
+    const profileCelular = document.getElementById('profileCelular');
+    const profileCorreo = document.getElementById('profileCorreo');
+
+    // Load profile data and options
+    function loadProfileData() {
+        const userId = '<%= HttpContext.Session.GetString("IDUsuario") %>'; // Obtener el ID del usuario desde la sesión
+
+        fetch(`https://localhost:7266/api/Usuario/4`)
             .then(response => response.json())
             .then(data => {
-                if (data.success) {
-                    document.getElementById('profileIDUsuario').value = data.user.IDUsuario;
-                    document.getElementById('profileUsuario').value = data.user.Usuario;
-                    document.getElementById('profileNombre').value = data.user.Nombre;
-                    document.getElementById('profileIDRol').value = data.user.IDRol;
-                    document.getElementById('profileIDArea').value = data.user.IDArea;
-                    document.getElementById('profileNumero').value = data.user.Numero;
-                    document.getElementById('profileExtension').value = data.user.Extension;
-                    document.getElementById('profileIdZona').value = data.user.IdZona;
-                    document.getElementById('profileCelular').value = data.user.Celular;
-                    document.getElementById('profileEstado').value = data.user.Estado;
-                    document.getElementById('profileCorreo').value = data.user.Correo;
+                if (data) {
+                    profileIDUsuario.value = data.idUsuario;
+                    profileUsuario.value = data.usuario;
+                    profileNombre.value = data.nombre;
+                    profileIDRol.value = data.idRol;
+                    profileIDArea.value = data.idArea;
+                    profileNumero.value = data.numero;
+                    profileExtension.value = data.extension;
+                    profileIdZona.value = data.idZona;
+                    profileCelular.value = data.celular;
+                    profileCorreo.value = data.correo;
                 } else {
                     alert('Error al cargar la información del perfil');
                 }
@@ -24,42 +37,62 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.error('Error al cargar la información del perfil:', error);
                 alert('Error al cargar la información del perfil');
             });
+    }
+
+    function loadOptions(url, selectElement) {
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                selectElement.innerHTML = ''; // Clear existing options
+                data.forEach(item => {
+                    const option = document.createElement('option');
+                    option.value = item.id;
+                    option.text = item.nombre;
+                    selectElement.appendChild(option);
+                });
+            })
+            .catch(error => {
+                console.error(`Error al cargar las opciones desde ${url}:`, error);
+                alert('Error al cargar las opciones');
+            });
+    }
+
+    // Load options for Rol, Area, and Zona
+    function loadAllOptions() {
+        loadOptions('https://localhost:7266/api/Roles', profileIDRol);
+        loadOptions('https://localhost:7266/api/Areas', profileIDArea);
+        loadOptions('https://localhost:7266/api/Zona', profileIdZona);
+    }
+
+    $('#profileModal').on('show.bs.modal', function (event) {
+        loadAllOptions();
+        loadProfileData();
     });
 
-    // Manejar el envío del formulario de perfil
-    document.getElementById('profileForm').addEventListener('submit', function (e) {
+    // Handle profile form submission
+    profileForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        const profileIDUsuario = document.getElementById('profileIDUsuario').value;
-        const profileUsuario = document.getElementById('profileUsuario').value;
-        const profileNombre = document.getElementById('profileNombre').value;
-        const profileIDRol = document.getElementById('profileIDRol').value;
-        const profileIDArea = document.getElementById('profileIDArea').value;
-        const profileNumero = document.getElementById('profileNumero').value;
-        const profileExtension = document.getElementById('profileExtension').value;
-        const profileIdZona = document.getElementById('profileIdZona').value;
-        const profileCelular = document.getElementById('profileCelular').value;
-        const profileEstado = document.getElementById('profileEstado').value;
-        const profileCorreo = document.getElementById('profileCorreo').value;
+        const updatedProfile = {
+            idUsuario: profileIDUsuario.value,
+            usuario: profileUsuario.value,
+            nombre: profileNombre.value,
+            idRol: profileIDRol.value,
+            idArea: profileIDArea.value,
+            numero: profileNumero.value,
+            extension: profileExtension.value,
+            idZona: profileIdZona.value,
+            celular: profileCelular.value,
+            estado: 1, // Assuming the estado is always active (1) for simplicity
+            correo: profileCorreo.value
+        };
 
-        fetch('/Home/UpdateProfile', {
-            method: 'POST',
+        fetch(`https://localhost:7266/api/Usuario/${updatedProfile.idUsuario}`, {
+            method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                IDUsuario: profileIDUsuario,
-                Usuario: profileUsuario,
-                Nombre: profileNombre,
-                IDRol: profileIDRol,
-                IDArea: profileIDArea,
-                Numero: profileNumero,
-                Extension: profileExtension,
-                IdZona: profileIdZona,
-                Celular: profileCelular,
-                Estado: profileEstado,
-                Correo: profileCorreo
-            })
+            body: JSON.stringify(updatedProfile)
         })
             .then(response => response.json())
             .then(data => {

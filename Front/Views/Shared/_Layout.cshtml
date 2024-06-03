@@ -9,7 +9,8 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Turnos</title>
-    <link href="~/css/styles.css" rel="stylesheet" />
+
+	<link href="~/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     @RenderSection("Estilos", required: false)
     <script src="~/lib/fontawesome/all.js"></script>
@@ -109,19 +110,19 @@
                         </div>
                         <div class="form-group">
                             <label for="profileUsuario">Usuario</label>
-                            <input type="text" class="form-control" id="profileUsuario" required>
+                            <input type="text" class="form-control" id="profileUsuario" required readonly>
                         </div>
                         <div class="form-group">
                             <label for="profileNombre">Nombre</label>
                             <input type="text" class="form-control" id="profileNombre" required>
                         </div>
                         <div class="form-group">
-                            <label for="profileIDRol">ID Rol</label>
-                            <input type="text" class="form-control" id="profileIDRol" required>
+                            <label for="profileIDRol">Rol</label>
+                            <select class="form-control" id="profileIDRol" required></select>
                         </div>
                         <div class="form-group">
-                            <label for="profileIDArea">ID Area</label>
-                            <input type="text" class="form-control" id="profileIDArea" required>
+                            <label for="profileIDArea">Área</label>
+                            <select class="form-control" id="profileIDArea" required></select>
                         </div>
                         <div class="form-group">
                             <label for="profileNumero">Número</label>
@@ -132,16 +133,12 @@
                             <input type="text" class="form-control" id="profileExtension" required>
                         </div>
                         <div class="form-group">
-                            <label for="profileIdZona">ID Zona</label>
-                            <input type="text" class="form-control" id="profileIdZona" required>
+                            <label for="profileIdZona">Zona</label>
+                            <select class="form-control" id="profileIdZona" required></select>
                         </div>
                         <div class="form-group">
                             <label for="profileCelular">Celular</label>
                             <input type="text" class="form-control" id="profileCelular" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="profileEstado">Estado</label>
-                            <input type="text" class="form-control" id="profileEstado" required>
                         </div>
                         <div class="form-group">
                             <label for="profileCorreo">Correo</label>
@@ -153,6 +150,7 @@
             </div>
         </div>
     </div>
+
     
     
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

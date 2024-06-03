@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Turnos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21a296649dafa52cd446fc28b54f2dd8afd3ebef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d37c1f72b67c46b0622c73bb435d9bcd2a3f2fdc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Turnos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Turnos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

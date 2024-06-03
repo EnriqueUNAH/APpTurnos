@@ -7,12 +7,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login - Banco Occidente</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, white, orange, black);
+            background: #f8f9fa;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -26,7 +26,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             width: 400px;
+            text-align: center;
         }
+
+            .login-container img {
+                width: 100px;
+                margin-bottom: 1rem;
+            }
 
             .login-container h2 {
                 margin-bottom: 1.5rem;
@@ -40,7 +46,7 @@
         }
 
         .btn-login {
-            background-color: #FFA500;
+            background-color: #F2971F;
             color: #fff;
             border-radius: 30px;
             padding: 0.75rem;
@@ -49,7 +55,7 @@
         }
 
             .btn-login:hover {
-                background-color: #FF8C00;
+                background-color: #d87e1b;
             }
 
         .form-group input {
@@ -63,8 +69,9 @@
     </style>
 </head>
 <body>
-    <div class="login-container text-center">
-        <h2>Login</h2>
+    <div class="login-container">
+        <img src="logotipo.png" alt="Banco Occidente Logo">
+        <h2>Banco Occidente</h2>
         <form id="loginForm" method="post" action="/Login/Authenticate">
             <div class="form-group">
                 <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario" required>
@@ -72,8 +79,11 @@
             <div class="form-group">
                 <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
             </div>
-            <button type="submit" class="btn btn-login">Entrar</button>
-            <div id="ErrorMessage" class="error"></div>
+            <button type="submit" class="btn btn-login">Iniciar Sesión</button>
+            @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+            {
+                <div class="error">@ViewBag.ErrorMessage</div>
+            }
         </form>
     </div>
 </body>
