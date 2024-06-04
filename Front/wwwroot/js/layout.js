@@ -13,9 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Load profile data and options
     function loadProfileData() {
-        const userId = '<%= HttpContext.Session.GetString("IDUsuario") %>'; // Obtener el ID del usuario desde la sesión
-
-        fetch(`https://localhost:7266/api/Usuario/4`)
+        fetch(`https://localhost:7266/api/Usuario/${userId}`)
             .then(response => response.json())
             .then(data => {
                 if (data) {
@@ -83,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
             extension: profileExtension.value,
             idZona: profileIdZona.value,
             celular: profileCelular.value,
-            estado: 1, // Assuming the estado is always active (1) for simplicity
+            estado: 1,
             correo: profileCorreo.value
         };
 

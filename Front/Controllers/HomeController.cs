@@ -27,7 +27,8 @@ namespace Front.Controllers
 				return RedirectToAction("Index", "Login");
 			}
 
-			return View();
+            ViewData["IDUsuario"] = HttpContext.Session.GetString("IDUsuario");
+            return View();
 		}
 
 		public IActionResult Dashboard()
@@ -37,7 +38,8 @@ namespace Front.Controllers
 				return RedirectToAction("Index", "Login");
 			}
 
-			return View();
+            ViewData["IDUsuario"] = HttpContext.Session.GetString("IDUsuario");
+            return View();
 		}
 
 		public IActionResult Privacy()
