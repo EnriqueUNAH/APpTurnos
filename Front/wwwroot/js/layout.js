@@ -3,8 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const profileIDUsuario = document.getElementById('profileIDUsuario');
     const profileUsuario = document.getElementById('profileUsuario');
     const profileNombre = document.getElementById('profileNombre');
-    const profileIDRol = document.getElementById('profileIDRol');
-    const profileIDArea = document.getElementById('profileIDArea');
     const profileNumero = document.getElementById('profileNumero');
     const profileExtension = document.getElementById('profileExtension');
     const profileIdZona = document.getElementById('profileIdZona');
@@ -20,8 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     profileIDUsuario.value = data.idUsuario;
                     profileUsuario.value = data.usuario;
                     profileNombre.value = data.nombre;
-                    profileIDRol.value = data.idRol;
-                    profileIDArea.value = data.idArea;
                     profileNumero.value = data.numero;
                     profileExtension.value = data.extension;
                     profileIdZona.value = data.idZona;
@@ -57,8 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Load options for Rol, Area, and Zona
     function loadAllOptions() {
-        loadOptions('https://localhost:7266/api/Roles', profileIDRol);
-        loadOptions('https://localhost:7266/api/Areas', profileIDArea);
         loadOptions('https://localhost:7266/api/Zona', profileIdZona);
     }
 
@@ -75,8 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
             idUsuario: profileIDUsuario.value,
             usuario: profileUsuario.value,
             nombre: profileNombre.value,
-            idRol: profileIDRol.value,
-            idArea: profileIDArea.value,
             numero: profileNumero.value,
             extension: profileExtension.value,
             idZona: profileIdZona.value,

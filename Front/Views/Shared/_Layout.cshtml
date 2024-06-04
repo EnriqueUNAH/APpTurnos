@@ -15,6 +15,47 @@
     @RenderSection("Estilos", required: false)
     <script src="~/lib/fontawesome/all.js"></script>
 	<script src="~/js/layout.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+        .modal-header {
+            background-color: #F49846;
+            color: white;
+        }
+
+        .modal-header .close {
+            color: white;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        .modal-body .form-group label {
+            font-weight: bold;
+        }
+
+        .modal-body .form-control {
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #F49846;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #F49846;
+        }
+
+    </style>
+
+
 </head>
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-light" style="background-color: #F2971F;">
@@ -26,10 +67,7 @@
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            @*  <div class="input-group">
-            <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-            <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-            </div> *@
+            
         </form>
 
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
@@ -69,10 +107,10 @@
                             Agenda Contactos
                         </a>
                         
-                        <a class="nav-link" asp-controller="Test" asp-action="Index">
+                      @*<a class="nav-link" asp-controller="Test" asp-action="Index">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-money-bill"></i></div>
                             Test
-                        </a>
+                        </a>*@
 
 
                     </div>
@@ -117,14 +155,6 @@
                             <input type="text" class="form-control" id="profileNombre" required>
                         </div>
                         <div class="form-group">
-                            <label for="profileIDRol">Rol</label>
-                            <select class="form-control" id="profileIDRol" required></select>
-                        </div>
-                        <div class="form-group">
-                            <label for="profileIDArea">Área</label>
-                            <select class="form-control" id="profileIDArea" required></select>
-                        </div>
-                        <div class="form-group">
                             <label for="profileNumero">Número</label>
                             <input type="text" class="form-control" id="profileNumero" required>
                         </div>
@@ -150,6 +180,7 @@
             </div>
         </div>
     </div>
+
 
 
     <script type="text/javascript">

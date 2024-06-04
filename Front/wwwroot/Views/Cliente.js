@@ -1,17 +1,17 @@
 ﻿$(document).ready(function () {
-    // Fetch initial data for filters
+    //Obtener datos iniciales para filtros
     fetchFilters();
 
-    // Fetch users initially
+    // Obtener usuarios inicialmente
     fetchUsers();
 
-    // Apply filters automatically when values of the fields change
+    // Aplica filtros automáticamente cuando los valores de los campos cambian
     $('#filterNombre, #filterArea, #filterZona, #filterRol').on('input change', function () {
         applyFilters();
     });
 });
 
-function fetchFilters() {
+function fetchFilters() { //Aplica los filtros
     getRoles();
     getAreas();
     getZonas();
@@ -22,7 +22,7 @@ function fetchUsers() {
         url: 'https://localhost:7266/api/Usuario',
         method: 'GET',
         success: function (data) {
-            window.allUsers = data; // Save all users for local filtering
+            window.allUsers = data; // Guardar todos los usuarios para el filtrado local
             renderUserCards(data);
         },
         error: function (error) {
