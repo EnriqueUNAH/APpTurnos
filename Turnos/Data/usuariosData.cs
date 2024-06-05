@@ -174,7 +174,33 @@ namespace Turnos.Data
             return respuesta;
         }
 
+        public async Task<bool> ActualizarParcial(int id, Dictionary<string, object> camposActualizados)
+        {
+            bool respuesta = true;
 
+            using (var con = new SqlConnection(conexion))
+            {
+                SqlCommand cmd = new SqlCommand("sp_ActualizarUsuarioParcial", con);
+                cmd.Parameters.AddWithValue("@UsuarioId", id);
+
+                foreach (var campo in camposActualizados)
+                {
+                    cmd.Parameters.AddWithValue($"@{campo.Key}", campo.Value ?? DBNull.Value);
+                }
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    await con.OpenAsync();
+                    respuesta = await cmd.ExecuteNonQueryAsync() > 0 ? true : false;
+                }
+                catch
+                {
+                    respuesta = false;
+                }
+            }
+            return respuesta;
+        }
 
     }
 }

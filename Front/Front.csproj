@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images.jpg" />
+    <Content Remove="wwwroot\logotipo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images.jpg" />
+    <None Include="wwwroot\Images\images.jpg" />
+    <None Include="wwwroot\Images\logotipo.png" />
     <None Include="wwwroot\js\site.js" />
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
@@ -47,6 +55,7 @@
     <None Include="wwwroot\lib\jquery\dist\jquery.js" />
     <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
     <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+    <None Include="wwwroot\logotipo.png" />
   </ItemGroup>
 
   <ItemGroup>

@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const profileNombre = document.getElementById('profileNombre');
     const profileNumero = document.getElementById('profileNumero');
     const profileExtension = document.getElementById('profileExtension');
-    const profileIdZona = document.getElementById('profileIdZona');
     const profileCelular = document.getElementById('profileCelular');
     const profileCorreo = document.getElementById('profileCorreo');
 
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     profileNombre.value = data.nombre;
                     profileNumero.value = data.numero;
                     profileExtension.value = data.extension;
-                    profileIdZona.value = data.idZona;
                     profileCelular.value = data.celular;
                     profileCorreo.value = data.correo;
                 } else {
@@ -33,31 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     }
 
-    function loadOptions(url, selectElement) {
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                selectElement.innerHTML = ''; // Clear existing options
-                data.forEach(item => {
-                    const option = document.createElement('option');
-                    option.value = item.id;
-                    option.text = item.nombre;
-                    selectElement.appendChild(option);
-                });
-            })
-            .catch(error => {
-                console.error(`Error al cargar las opciones desde ${url}:`, error);
-                alert('Error al cargar las opciones');
-            });
-    }
-
-    // Load options for Rol, Area, and Zona
-    function loadAllOptions() {
-        loadOptions('https://localhost:7266/api/Zona', profileIdZona);
-    }
-
     $('#profileModal').on('show.bs.modal', function (event) {
-        loadAllOptions();
         loadProfileData();
     });
 
@@ -71,10 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
             nombre: profileNombre.value,
             numero: profileNumero.value,
             extension: profileExtension.value,
-            idZona: profileIdZona.value,
             celular: profileCelular.value,
-            estado: 1,
-            correo: profileCorreo.value
+            correo: profileCorreo.value,
+            estado: 1 // Assuming this is a static value for now
         };
 
         fetch(`https://localhost:7266/api/Usuario/${updatedProfile.idUsuario}`, {

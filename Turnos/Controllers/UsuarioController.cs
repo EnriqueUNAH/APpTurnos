@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 using Turnos.Data;
@@ -49,5 +50,44 @@ namespace Turnos.Controllers
             bool respuesta = await _usuariosData.Eliminar(id);
             return StatusCode(StatusCodes.Status200OK, new { isSuccess = respuesta });
         }
+
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> ActualizarParcial(int id, [FromBody] JsonPatchDocument<UsuariosModel> patchDoc)
+        {
+            if (patchDoc == null)
+            {
+                return BadRequest();
+            }
+
+            UsuariosModel usuarioActual = await _usuariosData.Obtener(id);
+            if (usuarioActual == null)
+            {
+                return NotFound();
+            }
+
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var camposActualizados = new Dictionary<string, object>();
+            foreach (var op in patchDoc.Operations)
+            {
+                camposActualizados[op.path.TrimStart('/')] = op.value;
+            }
+
+            bool respuesta = await _usuariosData.ActualizarParcial(id, camposActualizados);
+
+            if (!respuesta)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Error al actualizar el usuario.");
+            }
+
+            return Ok(new { isSuccess = respuesta });
+        }
+
+
+
     }
 }

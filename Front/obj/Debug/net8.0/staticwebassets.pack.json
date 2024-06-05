@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\Front.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\Images\\backg.jpg",
+      "PackagePath": "staticwebassets\\Images\\backg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\Images\\bancocci_logo.png",
+      "PackagePath": "staticwebassets\\Images\\bancocci_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\Images\\images.jpg",
+      "PackagePath": "staticwebassets\\Images\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\Images\\logotipo.png",
+      "PackagePath": "staticwebassets\\Images\\logotipo.png"
+    },
+    {
       "Id": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\Views\\Cliente.js",
       "PackagePath": "staticwebassets\\Views\\Cliente.js"
     },

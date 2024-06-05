@@ -202,3 +202,5 @@ C:\Users\BANCO\Documents\Desarrolo\0\APpTurnos\Turnos\obj\Debug\net8.0\refint\Tu
 C:\Users\BANCO\Documents\Desarrolo\0\APpTurnos\Turnos\obj\Debug\net8.0\Turnos.pdb
 C:\Users\BANCO\Documents\Desarrolo\0\APpTurnos\Turnos\obj\Debug\net8.0\Turnos.genruntimeconfig.cache
 C:\Users\BANCO\Documents\Desarrolo\0\APpTurnos\Turnos\obj\Debug\net8.0\ref\Turnos.dll
+C:\Users\hnola\Documents\PRACTICA BANCO DE OCCIDENTE\0\APpTurnos\Turnos\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\hnola\Documents\PRACTICA BANCO DE OCCIDENTE\0\APpTurnos\Turnos\bin\Debug\net8.0\Newtonsoft.Json.dll
