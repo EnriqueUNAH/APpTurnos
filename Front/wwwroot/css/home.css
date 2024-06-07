@@ -19,8 +19,12 @@
     .user-card .card-title {
         font-weight: bold;
         margin-bottom: 10px;
+        font-family: 'Arial', Times New Roman; /* Cambia el tipo de letra */
+        font-size: 1.2rem; /* Cambia el tamaño de la letra */
     }
 
     .user-card .card-text {
         margin-bottom: 5px;
+        font-family: 'Arial', Times New Roman; /* Cambia el tipo de letra */
+        font-size: 1rem; /* Cambia el tamaño de la letra */
     }

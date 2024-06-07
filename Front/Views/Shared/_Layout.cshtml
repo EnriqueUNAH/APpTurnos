@@ -12,7 +12,6 @@
 
     <link rel="icon" href="~/images.jpg" type="image/x-icon" />
 
-
     <link href="~/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     @RenderSection("Estilos", required: false)
@@ -23,37 +22,37 @@
 
     <style>
         .modal-header {
-            background-color: #767676;
+            background-color: #343a40;
             color: white;
         }
 
-            .modal-header .close {
-                color: white;
-            }
+        .modal-header .close {
+            color: white;
+        }
 
         .modal-body {
             padding: 20px;
         }
 
-            .modal-body .form-group label {
-                font-weight: bold;
-            }
+        .modal-body .form-group label {
+            font-weight: bold;
+        }
 
-            .modal-body .form-control {
-                border-radius: 5px;
-            }
+        .modal-body .form-control {
+            border-radius: 5px;
+        }
 
-        .btn-primary {
-            background-color: #767676;
+        .modal-body .btn-primary {
+            background-color: orange !important; /* Cambiado a naranja */
             border: none;
             border-radius: 5px;
             padding: 10px 20px;
             transition: background-color 0.3s;
-        }
+       }
 
-            .btn-primary:hover {
-                background-color: #767676;
-            }
+        .modal-body .btn-primary:hover {
+            background-color: #ff9933 !important; /* Un tono más oscuro de naranja */
+        }
     </style>
 </head>
 <body class="sb-nav-fixed">
@@ -127,7 +126,15 @@
                     <form id="profileForm">
                         <!-- Hidden Fields for IDUsuario and Usuario -->
                         <input type="hidden" id="profileIDUsuario" name="profileIDUsuario">
-                        <input type="hidden" id="profileUsuario" name="profileUsuario">
+
+                        <input type="hidden" id="profileIdRol" name="profileIdRol">
+                        <input type="hidden" id="profileIdArea" name="profileIdArea">
+                        <input type="hidden" id="profileIdZona" name="profileIdZona">
+
+                        <div class="form-group">
+                            <label for="profileUsuario">Usuario</label>
+                            <input type="text" class="form-control" id="profileUsuario" readonly>
+                        </div>
 
                         <div class="form-group">
                             <label for="profileNombre">Nombre</label>
@@ -149,6 +156,21 @@
                             <label for="profileCorreo">Correo</label>
                             <input type="email" class="form-control" id="profileCorreo" required>
                         </div>
+
+                        <div class="form-group">
+                            <label for="profileRol">Rol</label>
+                            <input type="text" class="form-control" id="profileRol" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="profileArea">Area</label>
+                            <input type="text" class="form-control" id="profileArea" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="profileZona">Zona</label>
+                            <input type="text" class="form-control" id="profileZona" readonly>
+                        </div>
+
+
                         <button type="submit" class="btn btn-primary mt-3">Guardar Cambios</button>
                     </form>
                 </div>

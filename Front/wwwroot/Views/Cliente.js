@@ -55,7 +55,7 @@ function renderUserCards(users) {
         const estado = getEstado(user.estado);
 
         const userCard = `
-        <div class="col-md-4 mb-4">
+        <div class="col-md-3 mb-3">
             <div class="card user-card">
                 <div class="card-body">
                     <h5 class="card-title">Usuario: ${user.usuario || 'N/A'}</h5>

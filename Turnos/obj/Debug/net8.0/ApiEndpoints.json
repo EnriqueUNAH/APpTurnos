@@ -55,7 +55,7 @@
     "Parameters": [
       {
         "Name": "objeto",
-        "Type": "Turnos.Models.UsuariosModel",
+        "Type": "Turnos.Models.UsuariosUModel",
         "IsRequired": true
       }
     ],
@@ -88,27 +88,6 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Turnos.Controllers.UsuarioController",
-    "Method": "ActualizarParcial",
-    "RelativePath": "api/Usuario/{id}",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "patchDoc",
-        "Type": "Microsoft.AspNetCore.JsonPatch.JsonPatchDocument\u00601[[Turnos.Models.UsuariosModel, Turnos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],

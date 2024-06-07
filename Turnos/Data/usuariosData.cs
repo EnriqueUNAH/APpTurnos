@@ -41,7 +41,12 @@ namespace Turnos.Data
                             NombreZona = reader["NombreZona"].ToString(),
                             Celular = reader["Celular"].ToString(),
                             Estado = Convert.ToInt32(reader["Estado"]),
-                            Correo = reader["Correo"].ToString()
+                            Correo = reader["Correo"].ToString(),
+
+                            IDRol = Convert.ToInt32(reader["IDRol"]),
+                            IDArea = Convert.ToInt32(reader["IDArea"]),
+                            IdZona = Convert.ToInt32(reader["IdZona"])
+
                         });
                     }
                 }
@@ -69,14 +74,20 @@ namespace Turnos.Data
                             IdUsuario = Convert.ToInt32(reader["IdUsuario"]),
                             Usuario = reader["Usuario"].ToString(),
                             Nombre = reader["Nombre"].ToString(),
-                            IDRol = Convert.ToInt32(reader["IDRol"]),
-                            IDArea = Convert.ToInt32(reader["IDArea"]),
+                            Rol = reader["Rol"].ToString(),
+                            NombreArea = reader["NombreArea"].ToString(),
                             Numero = reader["Numero"].ToString(),
                             Extension = reader["Extension"].ToString(),
-                            IdZona = Convert.ToInt32(reader["IdZona"]),
+                            NombreZona = reader["NombreZona"].ToString(),
                             Celular = reader["Celular"].ToString(),
                             Estado = Convert.ToInt32(reader["Estado"]),
-                            Correo = reader["Correo"].ToString()
+                            Correo = reader["Correo"].ToString(),
+
+
+                            IDRol = Convert.ToInt32(reader["IDRol"]),
+                            IDArea = Convert.ToInt32(reader["IDArea"]),
+                            IdZona = Convert.ToInt32(reader["IdZona"])
+
                         };
                     }
                 }
@@ -117,7 +128,7 @@ namespace Turnos.Data
             return respuesta;
         }
 
-        public async Task<bool> Editar(UsuariosModel objeto)
+        public async Task<bool> Editar(UsuariosUModel objeto)
         {
             bool respuesta = true;
 
@@ -125,17 +136,18 @@ namespace Turnos.Data
             {
 
                 SqlCommand cmd = new SqlCommand("sp_ActualizarUsuario", con);
-                cmd.Parameters.AddWithValue("@UsuarioId", objeto.IdUsuario);
                 cmd.Parameters.AddWithValue("@UsuarioNombre", objeto.Usuario);
                 cmd.Parameters.AddWithValue("@Nombre", objeto.Nombre);
-                cmd.Parameters.AddWithValue("@Estado", objeto.Estado);
-                cmd.Parameters.AddWithValue("@RolId", objeto.Rol);
-                cmd.Parameters.AddWithValue("@AreaId", objeto.NombreArea);
+                cmd.Parameters.AddWithValue("@IDRol", objeto.IDRol);
+                cmd.Parameters.AddWithValue("@IDArea", objeto.IDArea);
                 cmd.Parameters.AddWithValue("@Numero", objeto.Numero);
                 cmd.Parameters.AddWithValue("@Extension", objeto.Extension);
-                cmd.Parameters.AddWithValue("@ZonaId", objeto.NombreZona);
+                cmd.Parameters.AddWithValue("@IdZona", objeto.IdZona);
                 cmd.Parameters.AddWithValue("@Celular", objeto.Celular);
+                cmd.Parameters.AddWithValue("@Estado", objeto.Estado);
                 cmd.Parameters.AddWithValue("@Correo", objeto.Correo);
+
+                cmd.Parameters.AddWithValue("@UsuarioId", objeto.IdUsuario);
 
                 cmd.CommandType = CommandType.StoredProcedure;
                 try

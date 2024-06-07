@@ -20,11 +20,11 @@ body {
     color: white;
 }
 
-    .user-card:hover {
-        transform: translateY(-10px); /* Efecto de elevación */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Efecto de sombra */
-        color: white;
-    }
+.user-card:hover {
+    transform: translateY(-10px); /* Efecto de elevación */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Efecto de sombra */
+    color: white;
+}
 
 .header-section {
     display: flex;
