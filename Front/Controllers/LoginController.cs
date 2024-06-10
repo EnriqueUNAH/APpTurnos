@@ -39,7 +39,8 @@ namespace Front.Controllers
 								HttpContext.Session.SetString("Nombre", user["nombre"].ToString());
 								HttpContext.Session.SetString("Correo", user["correo"].ToString());
 								HttpContext.Session.SetString("IDUsuario", user["idUsuario"].ToString());
-								HttpContext.Session.SetString("rol", user["rol"].ToString());
+                                HttpContext.Session.SetString("IdRol", user["idRol"].ToString());
+                                HttpContext.Session.SetString("rol", user["rol"].ToString());
 								HttpContext.Session.SetString("NombreArea", user["nombreArea"].ToString());
 								HttpContext.Session.SetString("Numero", user["numero"].ToString());
 								HttpContext.Session.SetString("Extension", user["extension"].ToString());

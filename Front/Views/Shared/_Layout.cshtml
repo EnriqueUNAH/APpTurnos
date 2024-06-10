@@ -10,16 +10,38 @@
     <meta name="author" content="" />
     <title>Turnos</title>
 
-    <link rel="icon" href="~/images.jpg" type="image/x-icon" />
+    @*Para administracion de usuaroos*@
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <style>
+        .edit-btn, .delete-btn {
+            cursor: pointer;
+            padding: 5px;
+            border: none;
+            background-color: transparent;
+        }
 
+        .edit-btn {
+            color: #5cb85c; /* Color pastel para editar */
+        }
+
+        .delete-btn {
+            color: #d9534f; /* Color pastel para eliminar */
+        }
+    </style>
+    @*Icono*@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+    <link rel="icon" href="~/images.jpg" type="image/x-icon" />
     <link href="~/css/styles.css" rel="stylesheet" />
+
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     @RenderSection("Estilos", required: false)
     <script src="~/lib/fontawesome/all.js"></script>
     <script src="~/js/layout.js"></script>
-
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
     <style>
         .modal-header {
             background-color: #343a40;
@@ -48,7 +70,7 @@
             border-radius: 5px;
             padding: 10px 20px;
             transition: background-color 0.3s;
-       }
+        }
 
         .modal-body .btn-primary:hover {
             background-color: #ff9933 !important; /* Un tono más oscuro de naranja */
@@ -61,7 +83,6 @@
         <a href="/">
             <img src="~/images/bancocci_logo.png" alt="Logo" style="height: 40px; margin-right: 10px;" rel="shortcut icon">
         </a>
-        <a class="navbar-brand" style="color: white;">Turnos</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
@@ -89,10 +110,16 @@
                             <div class="sb-nav-link-icon"><i class="bi bi-list-stars"></i></div>
                             Resumen
                         </a>
-                        <a class="nav-link" asp-controller="Usuarios" asp-action="Index">
-                            <div class="sb-nav-link-icon"><i class="bi bi-person-lines-fill"></i></div>
-                            Administración Contactos
-                        </a>
+                        
+                        <!-- Comparar el rol del usuario actual con los valores necesarios -->
+                        @*@if (ViewData["IdRol"] != null && ((int)ViewData["IdRol"] == 1))
+                            {*@
+                            <a class="nav-link" asp-controller="Usuarios" asp-action="Index">
+                                <div class="sb-nav-link-icon"><i class="bi bi-person-lines-fill"></i></div>
+                                Administración Contactos
+                            </a>
+                        @*}*@
+
                         <a class="nav-link" asp-controller="TargetUsers" asp-action="Index">
                             <div class="sb-nav-link-icon"><i class="bi bi-people-fill"></i></div>
                             Agenda Contactos
@@ -126,16 +153,13 @@
                     <form id="profileForm">
                         <!-- Hidden Fields for IDUsuario and Usuario -->
                         <input type="hidden" id="profileIDUsuario" name="profileIDUsuario">
-
                         <input type="hidden" id="profileIdRol" name="profileIdRol">
                         <input type="hidden" id="profileIdArea" name="profileIdArea">
                         <input type="hidden" id="profileIdZona" name="profileIdZona">
-
                         <div class="form-group">
                             <label for="profileUsuario">Usuario</label>
                             <input type="text" class="form-control" id="profileUsuario" readonly>
                         </div>
-
                         <div class="form-group">
                             <label for="profileNombre">Nombre</label>
                             <input type="text" class="form-control" id="profileNombre" required>
@@ -156,7 +180,6 @@
                             <label for="profileCorreo">Correo</label>
                             <input type="email" class="form-control" id="profileCorreo" required>
                         </div>
-
                         <div class="form-group">
                             <label for="profileRol">Rol</label>
                             <input type="text" class="form-control" id="profileRol" readonly>
@@ -169,8 +192,6 @@
                             <label for="profileZona">Zona</label>
                             <input type="text" class="form-control" id="profileZona" readonly>
                         </div>
-
-
                         <button type="submit" class="btn btn-primary mt-3">Guardar Cambios</button>
                     </form>
                 </div>
@@ -180,7 +201,6 @@
 
     <script type="text/javascript">
         var userId = '@ViewData["IDUsuario"]';
-        var RolId = '@ViewData["IdRol"]'
     </script>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -188,6 +208,11 @@
     <script src="~/js/scripts.js"></script>
     <script src="~/lib/sweetalert2/js/sweetalert2.js"></script>
     <script src="~/lib/loadingoverlay/loadingoverlay.min.js"></script>
+
+    @*Para administracion de usuarios*@
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>

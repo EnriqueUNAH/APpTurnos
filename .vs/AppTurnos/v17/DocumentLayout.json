@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\views\\targetusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\targetusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\wwwroot\\views\\usuarios.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\wwwroot\\views\\usuarios.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\views\\test\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\test\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,46 +33,72 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\TargetUsers\\Index.cshtml",
-              "RelativeDocumentMoniker": "Front\\Views\\TargetUsers\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\TargetUsers\\Index.cshtml",
-              "RelativeToolTip": "Front\\Views\\TargetUsers\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-07T14:43:01.031Z",
+              "DocumentIndex": 1,
+              "Title": "layout.js",
+              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\js\\layout.js",
+              "RelativeDocumentMoniker": "Front\\wwwroot\\js\\layout.js",
+              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\js\\layout.js",
+              "RelativeToolTip": "Front\\wwwroot\\js\\layout.js",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-10T16:21:11.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Front\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Front\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAKgAAAAAAAAAAAAAALQAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-07T14:42:49.137Z",
+              "DocumentIndex": 0,
+              "Title": "usuarios.js",
+              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\Views\\usuarios.js",
+              "RelativeDocumentMoniker": "Front\\wwwroot\\Views\\usuarios.js",
+              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\Views\\usuarios.js",
+              "RelativeToolTip": "Front\\wwwroot\\Views\\usuarios.js",
+              "ViewState": "AQIAADEAAAAAAAAAAAAQwDoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-10T15:43:02.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Front\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Front\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAeAAAA",
+              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Usuarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "Front\\Views\\Usuarios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Usuarios\\Index.cshtml",
+              "RelativeToolTip": "Front\\Views\\Usuarios\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAFUAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-07T14:39:38.624Z",
+              "WhenOpened": "2024-06-10T15:35:57.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Front\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Front\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAFUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T15:32:08.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Test\\Index.cshtml",
+              "RelativeDocumentMoniker": "Front\\Views\\Test\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Test\\Index.cshtml",
+              "RelativeToolTip": "Front\\Views\\Test\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T15:20:03.302Z",
               "EditorCaption": ""
             }
           ]
