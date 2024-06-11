@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+    .sidebar h2 {
+        margin-top: 0;
+    }
+
+    .sidebar form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .sidebar input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    .sidebar button {
+        padding: 10px;
+        border: none;
+        background-color: #ffa500; /* Naranja */
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+        .sidebar button:hover {
+            background-color: #e69500; /* Naranja más oscuro */
+        }
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content th, .content td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.content th {
+    background-color: #f8f9fa;
+}
+
+.content td {
+    background-color: #ffffff;
+}
+
+.content .action-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    color: #ff6b6b; /* Rojo */
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.content .action-button:hover {
+    color: #e05656; /* Rojo más oscuro */
+}
+

@@ -5,28 +5,28 @@
             "dataSrc": ""
         },
         "columns": [
-            { "data": "idUsuario", "visible": false }, // Ocultar columna ID Usuario
+            { "data": "idUsuario", "visible": false },
             { "data": "usuario" },
             { "data": "nombre" },
             { "data": "rol" },
-            { "data": "nombreArea", "title": "Área" },
+            { "data": "nombreArea" },
             { "data": "numero" },
             { "data": "extension" },
-            { "data": "nombreZona", "title": "Zona" },
+            { "data": "nombreZona" },
             { "data": "celular" },
             { "data": "correo" },
             {
                 "data": null,
                 "render": function (data, type, row) {
                     return `
-                        <button class="edit-btn" onclick="editUser(${data.idUsuario})"><i class="fas fa-edit"></i></button>
-                        <button class="delete-btn" onclick="deleteUser(${data.idUsuario})"><i class="fas fa-trash-alt"></i></button>
+                        <button class="edit-btn" onclick="showEditUserModal(${row.idUsuario})"><i class="fas fa-edit"></i></button>
+                        <button class="delete-btn" onclick="showDeleteUserModal(${row.idUsuario})"><i class="fas fa-trash-alt"></i></button>
                     `;
                 }
             }
         ],
         "columnDefs": [
-            { "width": "10%", "targets": 1 },
+            { "width": "15%", "targets": 1 },
             { "width": "15%", "targets": 2 },
             { "width": "10%", "targets": 3 },
             { "width": "10%", "targets": 4 },
@@ -55,14 +55,81 @@
             }
         }
     });
+
+    // Función para mostrar el modal de editar usuario
+    window.showEditUserModal = function (id) {
+        // Lógica para obtener los datos del usuario y llenar el formulario
+        $.ajax({
+            url: `https://localhost:7266/api/Usuario/${id}`,
+            method: 'GET',
+            success: function (data) {
+                $('#editUserId').val(data.idUsuario);
+                $('#editUsuario').val(data.usuario);
+                $('#editNombre').val(data.nombre);
+                $('#editRol').val(data.rol);
+                $('#editNombreArea').val(data.nombreArea);
+                $('#editNumero').val(data.numero);
+                $('#editExtension').val(data.extension);
+                $('#editNombreZona').val(data.nombreZona);
+                $('#editCelular').val(data.celular);
+                $('#editCorreo').val(data.correo);
+                $('#editIdRol').val(data.idRol);
+                $('#editIdArea').val(data.idArea);
+                $('#editIdZona').val(data.idZona);
+                $('#editEstado').val(data.estado);
+                $('#editUserModal').modal('show');
+            }
+        });
+    };
+
+    // Función para mostrar el modal de eliminar usuario
+    window.showDeleteUserModal = function (id) {
+        $('#deleteUserId').val(id);
+        $('#deleteUserModal').modal('show');
+    };
+
+    // Enviar datos de edición
+    $('#editUserForm').submit(function (e) {
+        e.preventDefault();
+        const id = $('#editUserId').val();
+        const data = {
+            idUsuario: id,
+            usuario: $('#editUsuario').val(),
+            nombre: $('#editNombre').val(),
+            numero: $('#editNumero').val(),
+            extension: $('#editExtension').val(),
+            celular: $('#editCelular').val(),
+            estado: $('#editEstado').val(),
+            correo: $('#editCorreo').val(),
+            idRol: $('#editIdRol').val(),
+            idArea: $('#editIdArea').val(),
+            idZona: $('#editIdZona').val()
+        };
+
+        $.ajax({
+            url: `https://localhost:7266/api/Usuario/${id}`,
+            method: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (response) {
+                $('#editUserModal').modal('hide');
+                $('#usuariosTable').DataTable().ajax.reload();
+            }
+        });
+    });
+
+    // Confirmar eliminación de usuario
+    $('#deleteUserForm').submit(function (e) {
+        e.preventDefault();
+        const id = $('#deleteUserId').val();
+
+        $.ajax({
+            url: `https://localhost:7266/api/Usuario/${id}`,
+            method: 'DELETE',
+            success: function (response) {
+                $('#deleteUserModal').modal('hide');
+                $('#usuariosTable').DataTable().ajax.reload();
+            }
+        });
+    });
 });
-
-function editUser(id) {
-    // Lógica para editar usuario
-    alert("Editar usuario: " + id);
-}
-
-function deleteUser(id) {
-    // Lógica para eliminar usuario
-    alert("Eliminar usuario: " + id);
-}

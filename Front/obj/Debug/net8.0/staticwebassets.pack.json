@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
     {
+      "Id": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\css\\periodos.css",
+      "PackagePath": "staticwebassets\\css\\periodos.css"
+    },
+    {
       "Id": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\css\\site - Copia.css",
       "PackagePath": "staticwebassets\\css\\site - Copia.css"
     },
@@ -59,6 +63,10 @@
     {
       "Id": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\js\\layout.js",
       "PackagePath": "staticwebassets\\js\\layout.js"
+    },
+    {
+      "Id": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\js\\periodos.js",
+      "PackagePath": "staticwebassets\\js\\periodos.js"
     },
     {
       "Id": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\wwwroot\\js\\scripts.js",

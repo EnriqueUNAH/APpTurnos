@@ -15,6 +15,7 @@ builder.Services.AddScoped<UsuariosTurnosData>();
 builder.Services.AddScoped<AreasData>();
 builder.Services.AddScoped<RolesData>();
 builder.Services.AddScoped<ZonaData>();
+builder.Services.AddScoped<PeriodosData>();
 
 builder.Services.AddCors(options =>
 {

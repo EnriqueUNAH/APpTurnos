@@ -110,20 +110,32 @@
                             <div class="sb-nav-link-icon"><i class="bi bi-list-stars"></i></div>
                             Resumen
                         </a>
-                        
-                        <!-- Comparar el rol del usuario actual con los valores necesarios -->
-                        @*@if (ViewData["IdRol"] != null && ((int)ViewData["IdRol"] == 1))
-                            {*@
-                            <a class="nav-link" asp-controller="Usuarios" asp-action="Index">
-                                <div class="sb-nav-link-icon"><i class="bi bi-person-lines-fill"></i></div>
-                                Administración Contactos
-                            </a>
-                        @*}*@
 
                         <a class="nav-link" asp-controller="TargetUsers" asp-action="Index">
                             <div class="sb-nav-link-icon"><i class="bi bi-people-fill"></i></div>
                             Agenda Contactos
                         </a>
+
+                        <!-- Menu desplegable -->
+                        <div class="nav-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseAdmin" aria-expanded="false" aria-controls="collapseAdmin">
+                            <div class="sb-nav-link-icon"><i class="bi bi-gear-fill"></i></div>
+                            Administración
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </div>
+
+                        <div class="collapse" id="collapseAdmin" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" asp-controller="Usuarios" asp-action="Index">
+                                    <div class="sb-nav-link-icon"><i class="bi bi-person-lines-fill"></i></div>
+                                    Administración Contactos
+                                </a>
+                                <a class="nav-link" asp-controller="Periodos" asp-action="Index">
+                                    <div class="sb-nav-link-icon"><i class="bi bi-calendar3"></i></div>
+                                    Periodos
+                                </a>
+                            </nav>
+                        </div>
+
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
@@ -140,6 +152,7 @@
             <footer class="py-4 bg-light mt-auto"></footer>
         </div>
     </div>
+
 
     <!-- Modal de perfil -->
     <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
@@ -199,6 +212,7 @@
         </div>
     </div>
 
+    <!--Para uso del js en perfil-->
     <script type="text/javascript">
         var userId = '@ViewData["IDUsuario"]';
     </script>
