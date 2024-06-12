@@ -40,5 +40,37 @@
         </div>
     </div>
 
+    <!-- Modal para editar -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Editar Período</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="editForm">
+                        <input type="hidden" id="editId">
+                        <div class="form-group">
+                            <label for="editNombre">Nombre:</label>
+                            <input type="text" id="editNombre" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editFechaInicio">Fecha Inicio:</label>
+                            <input type="date" id="editFechaInicio" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editFechaFin">Fecha Fin:</label>
+                            <input type="date" id="editFechaFin" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Actualizar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="~/js/periodos.js"></script>
 </body>

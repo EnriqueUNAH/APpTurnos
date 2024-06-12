@@ -46,6 +46,12 @@ namespace Turnos.Controllers
             bool respuesta = await _PeriodosData.Editar(objeto);
             return StatusCode(StatusCodes.Status200OK, new { isSuccess = respuesta });
         }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Eliminar(int id)
+        {
+            bool respuesta = await _PeriodosData.Eliminar(id);
+            return StatusCode(StatusCodes.Status200OK, new { isSuccess = respuesta });
+        }
 
     }
 }

@@ -66,11 +66,8 @@
                 $('#editUserId').val(data.idUsuario);
                 $('#editUsuario').val(data.usuario);
                 $('#editNombre').val(data.nombre);
-                $('#editRol').val(data.rol);
-                $('#editNombreArea').val(data.nombreArea);
                 $('#editNumero').val(data.numero);
                 $('#editExtension').val(data.extension);
-                $('#editNombreZona').val(data.nombreZona);
                 $('#editCelular').val(data.celular);
                 $('#editCorreo').val(data.correo);
                 $('#editIdRol').val(data.idRol);
@@ -106,16 +103,35 @@
             idZona: $('#editIdZona').val()
         };
 
-        $.ajax({
-            url: `https://localhost:7266/api/Usuario/${id}`,
+        fetch('https://localhost:7266/api/Usuario', {
             method: 'PUT',
-            contentType: 'application/json',
-            data: JSON.stringify(data),
-            success: function (response) {
-                $('#editUserModal').modal('hide');
-                $('#usuariosTable').DataTable().ajax.reload();
-            }
-        });
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => {
+                console.log('Response:', response); // Añadido para depuración
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Data:', data); // Añadido para depuración
+                if (data.isSuccess) {
+                    alert('Usuario actualizado exitosamente');
+                    window.location.reload();
+                } else {
+                    alert('Error al actualizar el Usuario');
+                }
+            })
+            .catch(error => {
+                console.error('Error al actualizar el Usuario:', error);
+                alert('Error al actualizar el Usuario');
+            });
+
+
     });
 
     // Confirmar eliminación de usuario

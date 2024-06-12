@@ -128,15 +128,15 @@ namespace Turnos.Data
             return respuesta;
         }
 
-       /* public async Task<bool> Eliminar(int id)
+        public async Task<bool> Eliminar(int id)
         {
             bool respuesta = true;
 
             using (var con = new SqlConnection(conexion))
             {
 
-                SqlCommand cmd = new SqlCommand("sp_DeleteUsuarios", con);
-                cmd.Parameters.AddWithValue("@UsuarioId", id);
+                SqlCommand cmd = new SqlCommand("sp_DeletePeriodo", con);
+                cmd.Parameters.AddWithValue("@ID", id);
                 cmd.CommandType = CommandType.StoredProcedure;
                 try
                 {
@@ -149,7 +149,7 @@ namespace Turnos.Data
                 }
             }
             return respuesta;
-        }*/
+        }
 
     }
 }
