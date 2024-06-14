@@ -10,6 +10,80 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Turnos.Controllers.AsignacionesController",
+    "Method": "Lista",
+    "RelativePath": "api/Asignaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Turnos.Controllers.AsignacionesController",
+    "Method": "Crear",
+    "RelativePath": "api/Asignaciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objeto",
+        "Type": "Turnos.Models.AsignacionesModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Turnos.Controllers.AsignacionesController",
+    "Method": "Editar",
+    "RelativePath": "api/Asignaciones",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objeto",
+        "Type": "Turnos.Models.AsignacionesModels",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Turnos.Controllers.AsignacionesController",
+    "Method": "Obtener",
+    "RelativePath": "api/Asignaciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Turnos.Controllers.AsignacionesController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Asignaciones/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Turnos.Controllers.PeriodosController",
     "Method": "Lista",
     "RelativePath": "api/Periodos",

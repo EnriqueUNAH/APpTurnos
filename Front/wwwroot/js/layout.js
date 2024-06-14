@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     profileIdRol.value = data.idRol;
                     profileIdArea.value = data.idArea;
-                    profileIdZona.value = data.idZona
+                    profileIdZona.value = data.idZona;
 
                     profileNombre.value = data.nombre;
                     profileNumero.value = data.numero;
@@ -37,9 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     profileCelular.value = data.celular;
                     profileCorreo.value = data.correo;
 
-                    profileRol.value = data.rol; // Make sure this matches the API response field
-                    profileArea.value = data.nombreArea; // Make sure this matches the API response field
-                    profileZona.value = data.nombreZona; // Make sure this matches the API response field
+                    profileRol.value = data.rol; // ID for load to changes XD
+                    profileArea.value = data.nombreArea; // ID for load to changes XD
+                    profileZona.value = data.nombreZona; // ID for load to changes XD
                 } else {
                     alert('Error al cargar la información del perfil');
                 }

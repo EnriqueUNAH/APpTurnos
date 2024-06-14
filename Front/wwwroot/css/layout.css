@@ -3,21 +3,21 @@
     color: white;
 }
 
-    .modal-header .close {
-        color: white;
-    }
+.modal-header .close {
+    color: white;
+}
 
 .modal-body {
     padding: 20px;
 }
 
-    .modal-body .form-group label {
-        font-weight: bold;
-    }
+.modal-body .form-group label {
+    font-weight: bold;
+}
 
-    .modal-body .form-control {
-        border-radius: 5px;
-    }
+.modal-body .form-control {
+    border-radius: 5px;
+}
 
 .btn-primary {
     background-color: #007bff;
@@ -27,6 +27,6 @@
     transition: background-color 0.3s;
 }
 
-    .btn-primary:hover {
-        background-color: #0056b3;
-    }
+.btn-primary:hover {
+    background-color: #0056b3;
+}
