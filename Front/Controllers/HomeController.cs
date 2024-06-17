@@ -51,64 +51,6 @@ namespace Front.Controllers
 
 			return View();
 		}
-
-		[HttpGet]
-		public async Task<IActionResult> GetProfile()
-		{
-			var idUsuario = HttpContext.Session.GetString("IDUsuario");
-			if (string.IsNullOrEmpty(idUsuario))
-			{
-				return Json(new { success = false });
-			}
-
-			var client = _httpClientFactory.CreateClient();
-			var response = await client.GetAsync($"https://localhost:7266/api/Usuario/{idUsuario}");
-			if (!response.IsSuccessStatusCode)
-			{
-				return Json(new { success = false });
-			}
-
-			var data = await response.Content.ReadAsStringAsync();
-			var user = JsonConvert.DeserializeObject<UserProfile>(data);
-
-			return Json(new { success = true, user });
-		}
-
-		[HttpPost]
-		public async Task<IActionResult> UpdateProfile([FromBody] UserProfile model)
-		{
-			var client = _httpClientFactory.CreateClient();
-			var response = await client.PutAsJsonAsync($"https://localhost:7266/api/Usuario/{model.IDUsuario}", model);
-			if (!response.IsSuccessStatusCode)
-			{
-				return Json(new { success = false });
-			}
-
-			// Actualiza los claims del usuario
-			var claims = new List<Claim>
-			{
-				new Claim(ClaimTypes.Name, model.Nombre),
-				new Claim(ClaimTypes.Email, model.Correo),
-				new Claim("IDUsuario", model.IDUsuario),
-				new Claim("Usuario", model.Usuario),
-				new Claim("IDRol", model.IDRol),
-				new Claim("IDArea", model.IDArea),
-				new Claim("Numero", model.Numero),
-				new Claim("Extension", model.Extension),
-				new Claim("IdZona", model.IdZona),
-				new Claim("Celular", model.Celular),
-				new Claim("Estado", model.Estado)
-			};
-
-			var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-			var principal = new ClaimsPrincipal(identity);
-
-			// Refrescar la sesión
-			await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-
-			return Json(new { success = true });
-		}
-
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 		public IActionResult Error()
 		{
@@ -128,18 +70,4 @@ namespace Front.Controllers
 		}
 	}
 
-	public class UserProfile
-	{
-		public string IDUsuario { get; set; }
-		public string Usuario { get; set; }
-		public string Nombre { get; set; }
-		public string IDRol { get; set; }
-		public string IDArea { get; set; }
-		public string Numero { get; set; }
-		public string Extension { get; set; }
-		public string IdZona { get; set; }
-		public string Celular { get; set; }
-		public string Estado { get; set; }
-		public string Correo { get; set; }
-	}
 }

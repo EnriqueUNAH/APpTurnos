@@ -1,10 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\",
+  "WorkspaceRootPath": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\hnola\\documents\\practica banco de occidente\\0\\appturnos\\front\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\0\\appturnos\\front\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\0\\appturnos\\front\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\0\\appturnos\\front\\controllers\\asignacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\controllers\\asignacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|c:\\users\\banco\\documents\\desarrolo\\0\\appturnos\\front\\views\\asignacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{757FF784-2892-481B-8170-CB46FF4B2709}|Front\\Front.csproj|solutionrelative:front\\views\\asignacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|c:\\users\\banco\\documents\\desarrolo\\0\\appturnos\\turnos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F3BF5DCA-65B0-4C9A-8004-C6983CE8C487}|Turnos\\Turnos.csproj|solutionrelative:turnos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,15 +39,63 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Front\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\hnola\\Documents\\PRACTICA BANCO DE OCCIDENTE\\0\\APpTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Front\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-14T17:24:46.136Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Front\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Front\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T21:25:03.584Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AsignacionController.cs",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Controllers\\AsignacionController.cs",
+              "RelativeDocumentMoniker": "Front\\Controllers\\AsignacionController.cs",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Controllers\\AsignacionController.cs",
+              "RelativeToolTip": "Front\\Controllers\\AsignacionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T21:21:29.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Views\\Asignacion\\Index.cshtml",
+              "RelativeDocumentMoniker": "Front\\Views\\Asignacion\\Index.cshtml",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Views\\Asignacion\\Index.cshtml",
+              "RelativeToolTip": "Front\\Views\\Asignacion\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T21:20:57.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Turnos\\appsettings.json",
+              "RelativeDocumentMoniker": "Turnos\\appsettings.json",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Turnos\\appsettings.json",
+              "RelativeToolTip": "Turnos\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-14T21:09:44.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Front\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\BANCO\\Documents\\Desarrolo\\0\\APpTurnos\\Front\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Front\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAANEAAAAAAAAAAAAwwNkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T17:24:46.136Z"
             }
           ]
         }
